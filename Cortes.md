@@ -1,0 +1,120 @@
+Rede (Total): Visão geral consolidada de toda a empresa.
+
+
+
+Por Filial: Desempenho individual de cada unidade/loja.
+
+
+
+Por Cidade: Somatório das filiais agrupadas por município.
+
+
+
+Por Vendedor: Desempenho individual dos membros da equipa comercial.
+
+
+
+Por Profissional: Desempenho individual dos dentistas/especialistas.
+
+
+
+Por Grupo de Serviço: Desempenho por categoria/família de serviços (no projeto chamado também de nível Produto).
+
+
+
+Por Serviço: Desempenho detalhado por cada serviço específico vendido.
+
+\----------------------------------------------------------------------------------------------
+
+~~CheckList Cartões Principais do Topo :~~
+
+
+
+~~Valor Líquido Vendido (R$)~~
+
+
+
+~~Meta de Valor (R$)~~
+
+
+
+~~% de Atingimento da Meta de Valor~~
+
+
+
+~~Quantidade de Vendas (Número de Vendas)~~
+
+
+
+~~Meta de Quantidade~~
+
+
+
+~~% de Atingimento da Meta de Quantidade~~
+
+
+
+
+
+
+
+\------------------------------------------------------------------------------------------------
+
+Visuais pedidos
+
+~~1 - Cartões no topo: valor líquido vendido, quantidade de vendas, meta de valor, meta de quantidade e o percentual de atingimento de cada uma.~~
+
+2
+
+Gráfico de barras horizontais por filial, ordenado do maior para o menor valor, com um único rótulo de dados que mostre valor e quantidade juntos, no formato "R$ 50.459 | Qtd 3.500".
+
+3
+
+Gráfico de barras por cidade (as 10 maiores) com o mesmo rótulo combinado de valor e quantidade.
+
+4
+
+Gráfico de colunas por grupo de serviço com rótulo de dados e a meta de valor como linha.
+
+5
+
+Matriz por vendedor com as colunas: valor, meta de valor, % de atingimento, quantidade, meta de quantidade e % de atingimento, com formatação condicional nos percentuais.
+
+6
+
+Matriz por profissional com as mesmas colunas da matriz de vendedores.
+
+7
+
+Tabela por serviço com valor, quantidade e meta, mostrando "sem meta" onde não houver.
+
+8
+
+Segmentação de mês e ano e um jeito claro de navegar entre os 7 cortes (botões, marcadores ou parâmetro de campo).
+
+Desafios de DAX
+
+1
+
+Medidas base separadas e nomeadas: valor líquido, número de vendas, valor bruto dos itens e quantidade de itens.
+
+2
+
+Meta de valor e meta de quantidade em medidas que escolhem o nível certo conforme o corte da tela (Produto, Serviço, Vendedor ou Profissional), sem somar níveis diferentes.
+
+3
+
+Percentual de atingimento com tratamento de divisão por zero e de item sem meta: a medida devolve "sem meta", e não 0% nem erro.
+
+4
+
+Meta da rede e da cidade calculadas como soma das metas das filiais, mesmo quando a tela está filtrada por outro corte.
+
+5
+
+Medida de texto para o rótulo combinado ("R$ 50.459 | Qtd 3.500"), com separador de milhar no padrão brasileiro.
+
+6
+
+Medida de status (acima ou abaixo da meta) usada na formatação condicional de cores.
+
