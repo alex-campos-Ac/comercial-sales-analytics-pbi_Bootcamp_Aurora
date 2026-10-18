@@ -1,0 +1,13 @@
+Rede (Total): Visão geral consolidada de toda a empresa.
+
+Por Filial: Desempenho individual de cada unidade/loja.
+
+Por Cidade: Somatório das filiais agrupadas por município.
+
+Por Vendedor: Desempenho individual dos membros da equipa comercial.
+
+Por Profissional: Desempenho individual dos dentistas/especialistas.
+
+Por Grupo de Serviço: Desempenho por categoria/família de serviços (no projeto chamado também de nível Produto).
+
+Por Serviço: Desempenho detalhado por cada serviço específico vendido.
