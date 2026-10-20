@@ -1,27 +1,9 @@
 Rede (Total): Visão geral consolidada de toda a empresa.
-
-
-
 Por Filial: Desempenho individual de cada unidade/loja.
-
-
-
 Por Cidade: Somatório das filiais agrupadas por município.
-
-
-
 Por Vendedor: Desempenho individual dos membros da equipa comercial.
-
-
-
 Por Profissional: Desempenho individual dos dentistas/especialistas.
-
-
-
 Por Grupo de Serviço: Desempenho por categoria/família de serviços (no projeto chamado também de nível Produto).
-
-
-
 Por Serviço: Desempenho detalhado por cada serviço específico vendido.
 
 \----------------------------------------------------------------------------------------------
@@ -58,6 +40,10 @@ Por Serviço: Desempenho detalhado por cada serviço específico vendido.
 
 
 
+
+
+
+
 \------------------------------------------------------------------------------------------------
 
 Visuais pedidos
@@ -66,11 +52,11 @@ Visuais pedidos
 
 2
 
-Gráfico de barras horizontais por filial, ordenado do maior para o menor valor, com um único rótulo de dados que mostre valor e quantidade juntos, no formato "R$ 50.459 | Qtd 3.500".
+~~Gráfico de barras horizontais por filial, ordenado do maior para o menor valor, com um único rótulo de dados que mostre valor e quantidade juntos, no formato "R$ 50.459 | Qtd 3.500".~~
 
 3
 
-Gráfico de barras por cidade (as 10 maiores) com o mesmo rótulo combinado de valor e quantidade.
+~~Gráfico de barras por cidade (as 10 maiores) com o mesmo rótulo combinado de valor e quantidade.~~
 
 4
 
@@ -94,27 +80,16 @@ Segmentação de mês e ano e um jeito claro de navegar entre os 7 cortes (botõ
 
 Desafios de DAX
 
-1
+1 Medidas base separadas e nomeadas: valor líquido, número de vendas, valor bruto dos itens e quantidade de itens.
 
-Medidas base separadas e nomeadas: valor líquido, número de vendas, valor bruto dos itens e quantidade de itens.
-
-2
-
+2 
 Meta de valor e meta de quantidade em medidas que escolhem o nível certo conforme o corte da tela (Produto, Serviço, Vendedor ou Profissional), sem somar níveis diferentes.
 
-3
+3 Percentual de atingimento com tratamento de divisão por zero e de item sem meta: a medida devolve "sem meta", e não 0% nem erro.
 
-Percentual de atingimento com tratamento de divisão por zero e de item sem meta: a medida devolve "sem meta", e não 0% nem erro.
+4 Meta da rede e da cidade calculadas como soma das metas das filiais, mesmo quando a tela está filtrada por outro corte.
 
-4
+5 Medida de texto para o rótulo combinado ("R$ 50.459 | Qtd 3.500"), com separador de milhar no padrão brasileiro.
 
-Meta da rede e da cidade calculadas como soma das metas das filiais, mesmo quando a tela está filtrada por outro corte.
-
-5
-
-Medida de texto para o rótulo combinado ("R$ 50.459 | Qtd 3.500"), com separador de milhar no padrão brasileiro.
-
-6
-
-Medida de status (acima ou abaixo da meta) usada na formatação condicional de cores.
+6 Medida de status (acima ou abaixo da meta) usada na formatação condicional de cores.
 
