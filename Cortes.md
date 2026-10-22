@@ -28,42 +28,31 @@ Por Serviço: Desempenho detalhado por cada serviço específico vendido.
 
 
 
-~~Meta de Quantidade~~
+~~Meta de Quantidade~~-------------------
 
 
 
-~~% de Atingimento da Meta de Quantidade~~
-
-
-
-
-
-
-
-
-
+~~% de Atingimento da Meta de Quantidade~~----------------
 
 
 \------------------------------------------------------------------------------------------------
 
 Visuais pedidos
 
-~~1 - Cartões no topo: valor líquido vendido, quantidade de vendas, meta de valor, meta de quantidade e o percentual de atingimento de cada uma.~~
+~~1 - Cartões no topo: valor líquido vendido, quantidade de vendas, meta de valor, meta de quantidade e o percentual de atingimento de cada uma.~~-----------
 
 2
 
-~~Gráfico de barras horizontais por filial, ordenado do maior para o menor valor, com um único rótulo de dados que mostre valor e quantidade juntos, no formato "R$ 50.459 | Qtd 3.500".~~
+~~Gráfico de barras horizontais por filial, ordenado do maior para o menor valor, com um único rótulo de dados que mostre valor e quantidade juntos, no formato "R$ 50.459 | Qtd 3.500".~~----------------------
 
 3
 
-~~Gráfico de barras por cidade (as 10 maiores) com o mesmo rótulo combinado de valor e quantidade.~~
+~~Gráfico de barras por cidade (as 10 maiores) com o mesmo rótulo combinado de valor e quantidade.~~----------------
 
 4
-
-Gráfico de colunas por grupo de serviço com rótulo de dados e a meta de valor como linha.
+----------Gráfico de colunas por grupo de serviço com rótulo de dados e a meta de valor como linha.-------------
 
 5
-
 Matriz por vendedor com as colunas: valor, meta de valor, % de atingimento, quantidade, meta de quantidade e % de atingimento, com formatação condicional nos percentuais.
 
 6
