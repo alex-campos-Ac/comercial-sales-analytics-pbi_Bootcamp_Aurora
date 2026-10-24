@@ -53,17 +53,35 @@ Visuais pedidos
 ----------Gráfico de colunas por grupo de serviço com rótulo de dados e a meta de valor como linha.-------------
 
 5
-Matriz por vendedor com as colunas: valor, meta de valor, % de atingimento, quantidade, meta de quantidade e % de atingimento, com formatação condicional nos percentuais.
+---------------Matriz por vendedor com as colunas: valor, meta de valor, % de atingimento, quantidade, meta de quantidade e % de atingimento, com formatação condicional nos percentuais.
 
 6
+-----------Matriz por profissional com as mesmas colunas da matriz de vendedores.
+co da fonte coluna personalizada:
+vermelho #B30202
+amarelo  #B79806
+verde  #00AD2E
 
-Matriz por profissional com as mesmas colunas da matriz de vendedores.
 
 7
 
-Tabela por serviço com valor, quantidade e meta, mostrando "sem meta" onde não houver.
+-----
 
-8
+Meta Valor Servico = 
+IF(
+    ISBLANK([Meta de Valor]), // Troque pelo nome exato da sua medida original de meta
+    "sem meta",
+    FORMAT([Meta de Valor], "R$ #,##0.00") // Isso garante que o valor não perca o R$
+)
+
+Meta Qtd Servico Exibicao = 
+IF(
+    ISBLANK([Meta de Quantidade]), 
+    "sem meta",
+    FORMAT([Meta de Quantidade], "0") // Formato de número inteiro
+)
+
+
 
 Segmentação de mês e ano e um jeito claro de navegar entre os 7 cortes (botões, marcadores ou parâmetro de campo).
 
@@ -71,8 +89,7 @@ Desafios de DAX
 
 1 Medidas base separadas e nomeadas: valor líquido, número de vendas, valor bruto dos itens e quantidade de itens.
 
-2 
-Meta de valor e meta de quantidade em medidas que escolhem o nível certo conforme o corte da tela (Produto, Serviço, Vendedor ou Profissional), sem somar níveis diferentes.
+2 Meta de valor e meta de quantidade em medidas que escolhem o nível certo conforme o corte da tela (Produto, Serviço, Vendedor ou Profissional), sem somar níveis diferentes.
 
 3 Percentual de atingimento com tratamento de divisão por zero e de item sem meta: a medida devolve "sem meta", e não 0% nem erro.
 
@@ -81,4 +98,3 @@ Meta de valor e meta de quantidade em medidas que escolhem o nível certo confor
 5 Medida de texto para o rótulo combinado ("R$ 50.459 | Qtd 3.500"), com separador de milhar no padrão brasileiro.
 
 6 Medida de status (acima ou abaixo da meta) usada na formatação condicional de cores.
-
