@@ -26,8 +26,13 @@ Meta de Quantidade
 
 % de Atingimento da Meta de Quantidade
 
+red- #FDCFBB
+yel - #FFF1AF
+gre- #D6FCE1
 
 
+153053
+234166
 ------------------------------------------------------------------------------------------------
 Visuais pedidos
 1 - Cartões no topo: valor líquido vendido, quantidade de vendas, meta de valor, meta de quantidade e o percentual de atingimento de cada uma.
