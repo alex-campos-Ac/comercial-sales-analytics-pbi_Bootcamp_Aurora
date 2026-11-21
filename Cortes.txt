@@ -1,1 +1,12 @@
-Como ligar: No modo de exibição Modelo, você vai conectar orcamentos às dimensões que já existem aí:   calendario[data] $\rightarrow$ orcamentos[data] (1 para Muitos)   filiais[codigo_filial] $\rightarrow$ orcamentos[codigo_filial] (1 para Muitos)   profissionais[codigo_profissional] $\rightarrow$ orcamentos[codigo_profissional] (1 para Muitos)   vendedores[codigo_vendedor] $\rightarrow$ orcamentos[codigo_vendedor] (1 para Muitos)   Nota sobre vendas: No dicionário existe uma ligação 1:1 opcional entre orcamentos e vendas via codigo_venda, mas para as métricas pedidas agora, você nem precisa ativá-la se quiser evitar caminhos duplos, pois a própria tabela orcamentos já tem a coluna de status e valores.   
+abaixo de 90%, de 90% a 99%, 100% ou mais
+
+fundo
+Red = #FDCFBB
+Yel = #FFF1AF
+Gre = #D6FCE1
+
+Letra
+Red = #B30202  >= 0 e < 1 
+Yel = #9F850E >= 0.9 e < 1
+Gre = #0A9830 >= 1 e 100
+
